@@ -23,7 +23,9 @@ routes.post(
   "/sessions", 
   validacaoLoginUsuario, 
   SessionController.logarUsuario
-  );
+);
+
+routes.get('/',Usercontroller.teste);
 
 //middleware
 routes.use(autenticadas);

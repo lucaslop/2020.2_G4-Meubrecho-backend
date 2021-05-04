@@ -13,8 +13,8 @@ class UserController {
   }
   // código de teste para verificar a autenticação
   async teste(req, res) {
-    console.log("o id do usuário logado é:", req.userId);
-    return res.json(req.userId);
+   
+    return res.json({"teste":"ola"});
   }
 }
 
