@@ -4,7 +4,7 @@
   "main": "server.js",
   "license": "MIT",
   "scripts": {
-    "start": "node ./src/server.js",
+    "start": "sucrase-node ./src/server.js",
     "dev": "nodemon -L ./src/server.js",
     "queue": "nodemon ./src/queue.js"
   },
@@ -31,7 +31,9 @@
     "sequelize": "^5.8.7",
     "validar-cpf": "^2.1.2",
     "youch": "^2.0.10",
-    "yup": "^0.32.9"
+    "yup": "^0.32.9",
+    "nodemon": "^1.19.1",
+    "sucrase": "^3.10.1"
   },
   "devDependencies": {
     "eslint": "^6.8.0",
